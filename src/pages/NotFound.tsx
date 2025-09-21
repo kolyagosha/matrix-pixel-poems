@@ -1,5 +1,7 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import MatrixBackground from "@/components/MatrixBackground";
+import { Home } from "lucide-react";
 
 const NotFound = () => {
   const location = useLocation();
@@ -9,15 +11,32 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 underline hover:text-blue-700">
-          Return to Home
-        </a>
+    <main className="min-h-screen relative">
+      <MatrixBackground />
+      
+      <div className="relative z-10 flex min-h-screen items-center justify-center">
+        <div className="text-center p-8">
+          <h1 className="pixel-title text-6xl md:text-8xl mb-8 animate-glitch">
+            404
+          </h1>
+          <div className="bg-card border-2 border-primary p-8 mb-8 max-w-md mx-auto">
+            <p className="matrix-text text-lg mb-4">
+              ERROR: PAGE NOT FOUND
+            </p>
+            <p className="matrix-text text-sm opacity-75">
+              This digital path does not exist in the Matrix
+            </p>
+          </div>
+          <Link 
+            to="/" 
+            className="pixel-button inline-flex items-center gap-2"
+          >
+            <Home size={16} />
+            RETURN TO MATRIX
+          </Link>
+        </div>
       </div>
-    </div>
+    </main>
   );
 };
 
