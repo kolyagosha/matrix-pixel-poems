@@ -214,10 +214,11 @@
 
   /* Typography */
   .pixel-title {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
     @apply text-primary text-center;
     text-shadow: 2px 2px 0 hsl(var(--primary-dark));
     image-rendering: pixelated;
+    font-display: swap;
   }
 
   .matrix-text {

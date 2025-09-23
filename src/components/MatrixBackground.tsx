@@ -50,7 +50,7 @@ const MatrixBackground = () => {
         charElement.style.left = `${matrixChar.x}px`;
         charElement.style.top = `${matrixChar.y}px`;
         charElement.style.opacity = `${matrixChar.opacity}`;
-        charElement.style.animationDuration = `${15 / matrixChar.speed}s`;
+        charElement.style.animation = `matrix-fall ${15 / matrixChar.speed}s linear infinite`;
         
         container.appendChild(charElement);
         
