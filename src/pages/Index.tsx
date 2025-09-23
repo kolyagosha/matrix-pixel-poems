@@ -29,10 +29,10 @@ const Index = () => {
         {/* Header */}
         <header className="text-center py-12 px-4">
           <h1 className="pixel-title text-4xl md:text-6xl mb-6 animate-pixel-glow">
-            8-BIT ALPHABET
+            ALTCTRDEL.XYZ primer
           </h1>
           <p className="matrix-text text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Digital Poetry in the Matrix • Retro Gaming Meets Cyberpunk Verse
+            Meme Digital Primer • Digital reality
           </p>
         </header>
 
