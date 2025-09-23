@@ -52,7 +52,7 @@ const Index = () => {
         {/* Footer */}
         <footer className="text-center py-12 px-4">
           <p className="matrix-text text-sm opacity-75">
-            Navigate the digital poetry matrix • Click any letter to begin
+            Level up your friends! Share this site.
           </p>
         </footer>
       </div>
