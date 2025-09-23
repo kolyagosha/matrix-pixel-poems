@@ -18,8 +18,8 @@ export const poemsData: PoemData[] = [
       'A is for Alarm, but no one is here,',
       'Just pixels and likes, year after year!'
     ],
-    image: '/src/assets/avatar-pixel.png',
-    imageAlt: '8-bit avatar character with duck and bin'
+    image: '/src/assets/A_1.png',
+    imageAlt: '8-bit avatar character representing digital identity'
   },
   {
     letter: 'B',
@@ -31,8 +31,8 @@ export const poemsData: PoemData[] = [
       'Your friends are all there, a digital crew,',
       'But blank is the feeling, when real talk is due.'
     ],
-    image: '/src/assets/blank-pixel.png',
-    imageAlt: '8-bit character with blank stare in digital world'
+    image: '/src/assets/B_1.png',
+    imageAlt: '8-bit person at computer with social media profiles, showing digital overwhelm'
   },
   {
     letter: 'C',
@@ -44,8 +44,8 @@ export const poemsData: PoemData[] = [
       'But look at my screen, what do I see?',
       'Just me and my charger, for company!'
     ],
-    image: '/src/assets/future-pixel.png',
-    imageAlt: '8-bit code and digital connections'
+    image: '/src/assets/C_1.png',
+    imageAlt: '8-bit network visualization with connected nodes and digital characters'
   },
   {
     letter: 'D',
@@ -57,8 +57,8 @@ export const poemsData: PoemData[] = [
       'A tap and a scroll, the setting is "on,"',
       'Then CRASH! A Disconnect, my peace is all gone!'
     ],
-    image: '/src/assets/future-pixel.png',
-    imageAlt: '8-bit data streams and digital landscapes'
+    image: '/src/assets/D_1.png',
+    imageAlt: '8-bit representation of digital disconnect and screen overwhelm'
   },
   {
     letter: 'E',
@@ -70,8 +70,8 @@ export const poemsData: PoemData[] = [
       'I laugh with a tear, I cry with a grin,',
       'Forget how to feel? Just type a new pin!'
     ],
-    image: '/src/assets/future-pixel.png',
-    imageAlt: '8-bit email and error messages'
+    image: '/src/assets/E_1.png',
+    imageAlt: '8-bit characters interacting with emoji on computer screen'
   },
   {
     letter: 'F',
@@ -83,8 +83,8 @@ export const poemsData: PoemData[] = [
       'My eyes are too big, my skin is too bright,',
       'Is there anyone real, in this digital light?'
     ],
-    image: '/src/assets/future-pixel.png',
-    imageAlt: '8-bit file systems and future tech'
+    image: '/src/assets/F_1.png',
+    imageAlt: '8-bit person comparing filtered vs real appearance on social media'
   },
   {
     letter: 'G',
@@ -96,8 +96,8 @@ export const poemsData: PoemData[] = [
       'My avatar\'s great, his XP is so high,',
       'But outside my screen, I just pass people by.'
     ],
-    image: '/src/assets/future-pixel.png',
-    imageAlt: '8-bit gaming graphics and pixels'
+    image: '/src/assets/G_1.png',
+    imageAlt: '8-bit gaming scene with avatars and scoring systems'
   },
   {
     letter: 'H',
@@ -109,8 +109,8 @@ export const poemsData: PoemData[] = [
       'They give out a "love," so shiny and bright,',
       'But my actual pulse just slows through the night.'
     ],
-    image: '/src/assets/future-pixel.png',
-    imageAlt: '8-bit hardware and network connections'
+    image: '/src/assets/H_1.png',
+    imageAlt: '8-bit person at computer surrounded by floating heart icons from social media'
   },
   {
     letter: 'I',
@@ -135,8 +135,8 @@ export const poemsData: PoemData[] = [
       'They know what they think, with no time to meet,',
       'Just pixels and comments, oh, bitter and sweet!'
     ],
-    image: '/src/assets/future-pixel.png',
-    imageAlt: '8-bit JavaScript code and digital journeys'
+    image: '/src/assets/J_1.png',
+    imageAlt: '8-bit courtroom scene with people making instant judgments on phones'
   },
   {
     letter: 'K',
