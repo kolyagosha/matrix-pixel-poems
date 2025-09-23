@@ -28,7 +28,7 @@ const Index = () => {
       <div className="relative z-10">
         {/* Header */}
         <header className="text-center py-12 px-4">
-          <h1 className="pixel-title text-4xl md:text-6xl mb-6 animate-pixel-glow">
+          <h1 className="pixel-title text-4xl md:text-6xl mb-6">
             ALTCTRDEL.XYZ primer
           </h1>
           <p className="matrix-text text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
