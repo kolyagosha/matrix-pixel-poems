@@ -1,9 +1,15 @@
 import LetterBlock from '@/components/LetterBlock';
 import MatrixBackground from '@/components/MatrixBackground';
 import { poemsData } from '@/data/poems';
-import letterAPixel from '@/assets/letter-a-pixel.png';
-import letterBPixel from '@/assets/letter-b-pixel.png';
-import letterXYZPixel from '@/assets/letter-xyz-pixel.png';
+import A_1 from '@/assets/A_1.png';
+import B_1 from '@/assets/B_1.png';
+import C_1 from '@/assets/C_1.png';
+import D_1 from '@/assets/D_1.png';
+import E_1 from '@/assets/E_1.png';
+import F_1 from '@/assets/F_1.png';
+import G_1 from '@/assets/G_1.png';
+import H_1 from '@/assets/H_1.png';
+import J_1 from '@/assets/J_1.png';
 import avatarPixel from '@/assets/avatar-pixel.png';
 import blankPixel from '@/assets/blank-pixel.png';
 import futurePixel from '@/assets/future-pixel.png';
@@ -11,14 +17,23 @@ import futurePixel from '@/assets/future-pixel.png';
 const Index = () => {
   // Map the image paths to imported assets
   const getImageSrc = (letter: string, imagePath: string) => {
-    if (letter === 'A') return letterAPixel;
-    if (letter === 'B') return letterBPixel;
-    if (letter === 'XYZ') return letterXYZPixel;
-    
-    // For the small preview images
-    if (imagePath.includes('avatar-pixel')) return avatarPixel;
-    if (imagePath.includes('blank-pixel')) return blankPixel;
-    return futurePixel;
+    // Map letters to their specific images
+    switch (letter) {
+      case 'A': return A_1;
+      case 'B': return B_1;
+      case 'C': return C_1;
+      case 'D': return D_1;
+      case 'E': return E_1;
+      case 'F': return F_1;
+      case 'G': return G_1;
+      case 'H': return H_1;
+      case 'J': return J_1;
+      default:
+        // For other letters without specific images yet
+        if (imagePath.includes('avatar-pixel')) return avatarPixel;
+        if (imagePath.includes('blank-pixel')) return blankPixel;
+        return futurePixel;
+    }
   };
 
   return (
