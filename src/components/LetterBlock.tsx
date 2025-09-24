@@ -41,7 +41,10 @@ const LetterBlock = ({ letter, firstLine, image, imageAlt }: LetterBlockProps) =
             src={image} 
             alt={imageAlt}
             className="w-full h-full object-contain"
-            style={{ imageRendering: 'pixelated' }}
+            style={{ 
+              imageRendering: 'pixelated'
+            }}
+            loading="lazy"
           />
         </div>
         
