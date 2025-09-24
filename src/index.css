@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;700&display=block') layer(fonts);
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=block') layer(fonts);
 
 @tailwind base;
 @tailwind components;
@@ -179,12 +179,11 @@
   /* 8-bit Pixel Components */
   .pixel-button {
     @apply border-2 border-primary bg-background text-primary font-bold px-4 py-2 transition-all duration-200;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Orbitron', cursive;
     font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     box-shadow: var(--pixel-shadow);
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
   }
 
   .pixel-button:hover {
@@ -216,12 +215,12 @@
 
   /* Typography */
   .pixel-title {
-    font-family: 'Press Start 2P', 'Courier New', monospace !important;
+    font-family: 'Orbitron', 'Courier New', monospace !important;
     @apply text-primary text-center;
     text-shadow: 2px 2px 0 hsl(var(--primary-dark)) !important;
-    image-rendering: pixelated !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
     font-display: block !important;
-    font-variation-settings: normal !important;
   }
 
   .matrix-text {
