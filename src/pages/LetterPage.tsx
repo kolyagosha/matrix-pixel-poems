@@ -88,38 +88,47 @@ const LetterPage = () => {
         <Navigation currentLetter={poemData.letter} />
         
         <div className="container mx-auto px-4 py-8">
-          <article className="max-w-4xl mx-auto">
+          <article className="max-w-6xl mx-auto">
             {/* Header with Letter */}
             <header className="text-center mb-12">
-              <h1 className="pixel-title text-6xl md:text-8xl mb-4 animate-pixel-glow">
+              <h1 className="pixel-title text-6xl md:text-8xl mb-8 animate-pixel-glow">
                 {poemData.letter}
               </h1>
-              <div className="w-32 h-32 md:w-48 md:h-48 mx-auto mb-8">
-                <img 
-                  src={getImageSrc(poemData.image)}
-                  alt={poemData.imageAlt}
-                  className="w-full h-full object-contain animate-scale-bounce"
-                  style={{ imageRendering: 'pixelated' }}
-                />
-              </div>
             </header>
 
-            {/* Full Poem */}
-            <section className="text-center mb-12">
-              <div className="bg-card border-2 border-primary p-8 md:p-12 max-w-2xl mx-auto">
-                {poemData.fullPoem.map((line, index) => (
-                  <p 
-                    key={index}
-                    className="matrix-text text-lg md:text-xl leading-relaxed mb-2"
-                  >
-                    {line}
-                  </p>
-                ))}
+            {/* Main Content Layout */}
+            <div className="flex flex-col lg:flex-row gap-12 items-start">
+              {/* Large Image */}
+              <div className="w-full lg:w-1/2 flex justify-center">
+                <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                  <img 
+                    src={getImageSrc(poemData.image)}
+                    alt={poemData.imageAlt}
+                    className="w-full h-full object-contain animate-scale-bounce"
+                    style={{ imageRendering: 'pixelated' }}
+                  />
+                </div>
               </div>
-            </section>
+
+              {/* Poem Text */}
+              <div className="w-full lg:w-1/2">
+                <div className="bg-card border-2 border-primary p-8 md:p-12">
+                  {poemData.fullPoem.map((line, index) => (
+                    <p 
+                      key={index}
+                      className="matrix-text text-lg md:text-xl leading-relaxed mb-3"
+                    >
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
 
             {/* Share Buttons */}
-            <ShareButtons title={poemData.letter} />
+            <div className="mt-12">
+              <ShareButtons title={poemData.letter} />
+            </div>
           </article>
         </div>
       </div>
