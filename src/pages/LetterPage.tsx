@@ -21,6 +21,12 @@ import O_1 from '@/assets/O_1.png';
 import P_1 from '@/assets/P_1.png';
 import Q_1 from '@/assets/Q_1.png';
 import R_1 from '@/assets/R_1.png';
+import S_1 from '@/assets/S_1.png';
+import T_1 from '@/assets/T_1.png';
+import U_1 from '@/assets/U_1.png';
+import V_1 from '@/assets/V_1.png';
+import W_1 from '@/assets/W_1.png';
+import XYZ_1 from '@/assets/XYZ_1.png';
 import avatarPixel from '@/assets/avatar-pixel.png';
 import blankPixel from '@/assets/blank-pixel.png';
 import futurePixel from '@/assets/future-pixel.png';
@@ -60,6 +66,12 @@ const LetterPage = () => {
       case 'P': return P_1;
       case 'Q': return Q_1;
       case 'R': return R_1;
+      case 'S': return S_1;
+      case 'T': return T_1;
+      case 'U': return U_1;
+      case 'V': return V_1;
+      case 'W': return W_1;
+      case 'XYZ': return XYZ_1;
       default:
         // For other letters without specific images yet
         if (imagePath.includes('avatar-pixel')) return avatarPixel;
