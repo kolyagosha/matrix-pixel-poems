@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Copy, Share2, Mail, MessageCircle, Facebook, Twitter } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import SubscribeModal from './SubscribeModal';
 
 interface ShareButtonsProps {
   title: string;
@@ -9,8 +8,8 @@ interface ShareButtonsProps {
 }
 
 const ShareButtons = ({ title, url }: ShareButtonsProps) => {
+  const [isSubscribed, setIsSubscribed] = useState(false);
   const [showSocialMenu, setShowSocialMenu] = useState(false);
-  const [showSubscribeModal, setShowSubscribeModal] = useState(false);
   const { toast } = useToast();
   
   const currentUrl = url || window.location.href;
@@ -45,7 +44,11 @@ const ShareButtons = ({ title, url }: ShareButtonsProps) => {
   };
 
   const handleSubscribe = () => {
-    setShowSubscribeModal(true);
+    toast({
+      title: "Supabase Required",
+      description: "Connect to Supabase to enable email subscriptions and store subscriber data.",
+      variant: "destructive",
+    });
   };
 
   return (
@@ -117,11 +120,6 @@ const ShareButtons = ({ title, url }: ShareButtonsProps) => {
           <span className="hidden sm:inline">SUBSCRIBE</span>
         </button>
       </div>
-
-      <SubscribeModal 
-        isOpen={showSubscribeModal} 
-        onClose={() => setShowSubscribeModal(false)} 
-      />
     </div>
   );
 };
