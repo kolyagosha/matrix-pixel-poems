@@ -43,11 +43,10 @@ const ShareButtons = ({ title, url }: ShareButtonsProps) => {
     setShowSocialMenu(false);
   };
 
-  const handleSubscribe = () => {
+  const handleJoinUs = () => {
     toast({
-      title: "Supabase Required",
-      description: "Connect to Supabase to enable email subscriptions and store subscriber data.",
-      variant: "destructive",
+      title: "Join Us",
+      description: "Social media links will be added soon!",
     });
   };
 
@@ -112,12 +111,12 @@ const ShareButtons = ({ title, url }: ShareButtonsProps) => {
         </div>
 
         <button
-          onClick={handleSubscribe}
+          onClick={handleJoinUs}
           className="pixel-button flex items-center gap-2"
-          title="Subscribe for updates"
+          title="Join us on social media"
         >
           <Mail size={14} />
-          <span className="hidden sm:inline">SUBSCRIBE</span>
+          <span className="hidden sm:inline">JOIN US</span>
         </button>
       </div>
     </div>
