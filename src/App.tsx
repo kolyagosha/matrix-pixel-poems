@@ -14,7 +14,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/matrix-pixel-poems">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/letter/:letter" element={<LetterPage />} />
