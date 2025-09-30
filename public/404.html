@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Matrix Pixel Poems</title>
+    <script>
+      // GitHub Pages SPA redirect fix
+      // Сохраняем путь и перенаправляем на главную
+      sessionStorage.redirect = location.href;
+      location.replace(
+        location.origin + 
+        location.pathname.split('/').slice(0, 2).join('/') + 
+        '/?redirect=' + 
+        location.pathname.slice(location.pathname.split('/').slice(0, 2).join('/').length)
+      );
+    </script>
+  </head>
+  <body>
+    <!-- GitHub Pages будет показывать эту страницу при 404 -->
+  </body>
+</html>
